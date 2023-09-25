@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YH+z7BCn9XtJqp+G6RpUfwAZS08c2AithKTjDoXkPpBJwIMUr9XBXeRYDx1dQ9N6xyBsexl8YHGgNL44Bc/oIg==",
+  "dgSpecHash": "eYkHpBY2ISfGsgXzQHF0dYGl6uBR4Sg7xG/bMebaARV2+kEYIRaVWaO7LikFTFNd0d4NChUIyQYjx2hnyj3Q/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\Documents\\GitHub\\strucna_praksa_2023\\UnosFormula\\Services\\Form\\Form.API\\Form.API.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\mongodb.bson\\2.21.0\\mongodb.bson.2.21.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\mongodb.driver\\2.21.0\\mongodb.driver.2.21.0.nupkg.sha512",

@@ -1,0 +1,44 @@
+name: dockercompose13830337959904866352
+services:
+  form.api:
+    build:
+      context: C:\Users\PC\Documents\GitHub\strucna_praksa_2023\UnosFormula
+      dockerfile: Services/Form/Form.API/Dockerfile
+    container_name: form.api
+    depends_on:
+      formsdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: mongodb://formsdb:27017
+    image: formapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8555"
+      protocol: tcp
+  formsdb:
+    container_name: formsdb
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+networks:
+  default:
+    name: dockercompose13830337959904866352_default
+volumes:
+  mongo_data:
+    name: dockercompose13830337959904866352_mongo_data

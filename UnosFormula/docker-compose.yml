@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  formsdb:
+    image: mongo
+  form.api:
+    image: ${DOCKER_REGISTRY-}formapi
+    build:
+      context: .
+      dockerfile: Services/Form/Form.API/Dockerfile
+
+volumes:
+  mongo_data:

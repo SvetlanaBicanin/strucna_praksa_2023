@@ -1,0 +1,18 @@
+name: dockercompose13830337959904866352
+services:
+  form.api:
+    build:
+      context: C:\Users\PC\Documents\GitHub\strucna_praksa_2023\UnosFormula
+      dockerfile: Services/Form/Form.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: formapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose13830337959904866352_default

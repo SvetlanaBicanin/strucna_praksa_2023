@@ -9,7 +9,7 @@ namespace Form.API.Data
 
         public FormContext(IConfiguration configuration)
         {
-            var client = new MongoClient("mongodb://localhost:27017");
+            var client = new MongoClient(configuration.GetValue<string>("DatabaseSettings:ConnectionString"));
             var database = client.GetDatabase("FormDB");
 
             Forms = database.GetCollection<ApplicationForm>("Forms");
