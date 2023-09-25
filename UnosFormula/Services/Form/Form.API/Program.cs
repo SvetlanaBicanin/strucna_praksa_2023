@@ -1,4 +1,13 @@
+using Form.API.Data;
+using Form.API.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+builder.Services.AddScoped<IFormContext, FormContext>();
+builder.Services.AddScoped<IFormRepository, FormRepository>();
+
 
 // Add services to the container.
 
@@ -16,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();
 

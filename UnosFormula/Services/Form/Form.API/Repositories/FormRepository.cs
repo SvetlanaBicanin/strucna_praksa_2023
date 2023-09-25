@@ -15,7 +15,7 @@ namespace Form.API.Repositories
 
         public async Task<IEnumerable<ApplicationForm>> GetForms()
         {
-            return await _context.Forms.Find<ApplicationForm>(p => true).ToListAsync();
+            return await _context.Forms.Find(p => true).ToListAsync();
         }
 
 

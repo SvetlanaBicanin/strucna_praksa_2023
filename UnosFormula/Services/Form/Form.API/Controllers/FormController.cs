@@ -35,13 +35,12 @@ namespace Form.API.Controllers
         public async Task<ActionResult<ApplicationForm>> CreateProduct([FromBody] ApplicationForm form)
         {
             await _repository.CreateForm(form);
-
-            return CreatedAtRoute("GetForm", new { id = form.Id }, form);
+            return Ok();
         }
 
-        [HttpDelete("{id:length(24)}", Name = "DeleteForm")]
+        [HttpDelete]
         [ProducesResponseType(typeof(ApplicationForm), StatusCodes.Status200OK)]
-        public async Task<IActionResult> DeleteProductById(string id)
+        public async Task<IActionResult> DeleteFormById(string id)
         {
             return Ok(await _repository.DeleteForm(id));
         }
