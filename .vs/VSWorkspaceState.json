@@ -2,14 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\UnosFormula",
+    "\\UnosFormula\\obj\\Docker",
     "\\UnosFormula\\Services",
     "\\UnosFormula\\Services\\Form",
     "\\UnosFormula\\Services\\Form\\Form.API",
-    "\\UnosFormula\\Services\\Form\\Form.API\\Controllers",
     "\\UnosFormula\\WebApp",
-    "\\UnosFormula\\WebApp\\forms-app",
-    "\\UnosFormula\\WebApp\\forms-app\\src"
+    "\\UnosFormula\\WebApp\\forms-app"
   ],
-  "SelectedNode": "\\UnosFormula\\Services\\Form\\Form.API\\Controllers\\FormController.cs",
+  "SelectedNode": "\\UnosFormula\\obj",
   "PreviewInSolutionExplorer": false
 }
