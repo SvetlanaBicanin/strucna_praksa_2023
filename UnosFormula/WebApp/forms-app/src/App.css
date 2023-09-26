@@ -2,9 +2,9 @@
     height: 100vh;
     width: 100vw;
     background-image: url('../src/assets/matf-logo.png');
-    overflow: scroll;
-    background-color:white;
+    background-position-x: 20px;
+    background-position-y: 20px;
+    background-size: 250px, 250px;
+    background-repeat: no-repeat;
+    background-color: white;
 }
-
-
-
