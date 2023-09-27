@@ -137,7 +137,7 @@ const FormModal = () => {
                                     onChange={formInputHandler}
                                />
                             </div>
-                            <div className="input-wrap">
+                            <div className="input-wrap span-corection">
                                 <label htmlFor="thesis">* Thesis </label>
                                 <input
                                     placeholder="Enter thesis"

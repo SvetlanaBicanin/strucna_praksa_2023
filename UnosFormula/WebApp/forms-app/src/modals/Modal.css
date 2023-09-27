@@ -37,11 +37,19 @@ div[class*='ReactModalPortal'] > div {
     align-items: center;
 }
 
+
 .inputs-wrap {
     display: flex;
     width: 80%;
 }
 
+.span-corection > div > span:first-child {
+    display: none !important;
+}
+
+span[class*=“Preview”] {
+    display: none !important;
+}
 
 .input-wrap {
     display: flex;
