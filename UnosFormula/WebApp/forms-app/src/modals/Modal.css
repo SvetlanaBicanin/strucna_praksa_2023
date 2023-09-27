@@ -103,3 +103,16 @@ label {
         background-color: rgba(125, 26, 26, 1);
     }
 
+.err-msg {
+    color: darkred;
+    font-size: small;
+}
+
+.link-help {
+    color: darkred;
+    font-size: small;
+    margin-left:310px;
+}
+.thesis-div {
+    text-align: right;
+}

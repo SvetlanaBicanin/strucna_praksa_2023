@@ -9,8 +9,9 @@
     "\\UnosFormula\\WebApp",
     "\\UnosFormula\\WebApp\\forms-app",
     "\\UnosFormula\\WebApp\\forms-app\\src",
-    "\\UnosFormula\\WebApp\\forms-app\\src\\assets"
+    "\\UnosFormula\\WebApp\\forms-app\\src\\api",
+    "\\UnosFormula\\WebApp\\forms-app\\src\\modals"
   ],
-  "SelectedNode": "\\UnosFormula\\WebApp\\forms-app",
+  "SelectedNode": "\\UnosFormula\\WebApp\\forms-app\\src\\modals\\FormModal.js",
   "PreviewInSolutionExplorer": false
 }

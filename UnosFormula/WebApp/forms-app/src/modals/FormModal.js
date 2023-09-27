@@ -138,7 +138,11 @@ const FormModal = () => {
                                />
                             </div>
                             <div className="input-wrap span-corection">
-                                <label htmlFor="thesis">* Thesis </label>
+                              <div className="thesis-div">
+                                   <label htmlFor="thesis">* Thesis </label>
+                                   <a className="link-help" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">help</a>
+                              </div>
+                               
                                 <input
                                     placeholder="Enter thesis"
                                     value={formState.thesis}
