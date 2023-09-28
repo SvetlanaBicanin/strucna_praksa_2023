@@ -1,18 +1,16 @@
 .modal {
     background-color: white;
-    height: auto;
     width: 500px;
-    margin: auto;
+    height: 700px;
+    overflow: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
-    overflow: auto;
     border: 1px solid gray;
     z-index: 10000;
     box-shadow: 0 3px 20px rgb(27,27,27);
-    border: none;
 }
 
 div[class*='ReactModalPortal'] > div {
@@ -22,7 +20,7 @@ div[class*='ReactModalPortal'] > div {
 .modal-header {
     background-color: rgba(125, 26, 26, 0.9);
     color: white;
-    padding: 5px;
+    padding: 3px;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -35,6 +33,7 @@ div[class*='ReactModalPortal'] > div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 
 
@@ -111,8 +110,8 @@ label {
 .link-help {
     color: darkred;
     font-size: small;
-    margin-left:310px;
+    margin-left:350px;
 }
 .thesis-div {
-    text-align: right;
+    text-align: left;
 }

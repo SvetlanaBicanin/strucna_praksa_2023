@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import Modal from "react-modal";
 import "./Modal.css";
 import { createForm } from "../api/Services";
@@ -53,7 +53,17 @@ const FormModal = () => {
 
             if (isValidInput()) {
                 await createForm(formState).catch((e) => { console.log(e) });
-            }
+        }
+            setFormState({
+                 id: "",
+                 firstName: "",
+                 lastName: "",
+                 email: "",
+                 major: "",
+                 mentor: "",
+                 phoneNumber: "",
+                 thesis: ""
+    });
 
         
 
@@ -70,7 +80,7 @@ const FormModal = () => {
             shouldCloseOnOverlayClick={false}
         >
             <div className="modal-header">
-                <h2>Formular</h2>
+                <h2>Пријава теме мастер рада</h2>
             </div>
             <div className="modal-wrap">
                 
@@ -78,9 +88,9 @@ const FormModal = () => {
 
                         
                             <div className="input-wrap">
-                                <label htmlFor="firstName">* First name  </label>
+                                <label htmlFor="firstName">* Име  </label>
                                 <input
-                                    placeholder="Enter name"
+                                    placeholder="Унеси име"
                                     value={formState.firstName}
                                     name="firstName"
                                     type="text"
@@ -88,9 +98,9 @@ const FormModal = () => {
                                 />
                             </div>
                             <div className="input-wrap">
-                                <label htmlFor="lastName">* Last name </label>
+                                <label htmlFor="lastName">* Презиме </label>
                                 <input
-                                    placeholder="Enter last name"
+                                    placeholder="Унеси презиме"
                                     value={formState.lastName}
                                     name="lastName"
                                     type="text"
@@ -98,9 +108,9 @@ const FormModal = () => {
                                 />
                             </div>
                             <div className="input-wrap">
-                                <label htmlFor="email">* Email </label>
+                                <label htmlFor="email">* мејл адреса </label>
                                 <input
-                                    placeholder="Enter email"
+                                    placeholder="Унеси мејл адресу"
                                     value={formState.email}
                                     name="email"
                                     type="text"
@@ -108,9 +118,9 @@ const FormModal = () => {
                                />
                             </div>
                             <div className="input-wrap">
-                                <label htmlFor="major">* Major </label>
+                                <label htmlFor="major">* студијски програм </label>
                                 <input
-                                    placeholder="Enter major"
+                                    placeholder="Унеси студијски програм"
                                     value={formState.major}
                                     name="major"
                                     type="text"
@@ -118,9 +128,9 @@ const FormModal = () => {
                               />
                             </div>
                             <div className="input-wrap">
-                                <label htmlFor="mentor">* Mentor</label>
+                                <label htmlFor="mentor">* име и презиме Ментора </label>
                                 <input
-                                    placeholder="Enter mentor"
+                                    placeholder="Унесите име и презиме Ментора"
                                     value={formState.mentor}
                                     name="mentor"
                                     type="text"
@@ -128,9 +138,9 @@ const FormModal = () => {
                                />
                             </div>
                             <div className="input-wrap">
-                                <label htmlFor="phoneNumber">* Phone number </label>
+                                <label htmlFor="phoneNumber">* број телефона </label>
                                 <input
-                                    placeholder="Enter phone number"
+                                    placeholder="Унесите број телефона"
                                     value={formState.phoneNumber}
                                     name="phoneNumber"
                                     type="text"
@@ -139,12 +149,12 @@ const FormModal = () => {
                             </div>
                             <div className="input-wrap span-corection">
                               <div className="thesis-div">
-                                   <label htmlFor="thesis">* Thesis </label>
-                                   <a className="link-help" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">help</a>
+                                   <label htmlFor="thesis">* тема мастер рада </label>
+                                   <a className="link-help" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">помоћ</a>
                               </div>
                                
                                 <input
-                                    placeholder="Enter thesis"
+                                    placeholder="Унеси тему мастер рада"
                                     value={formState.thesis}
                                     name="thesis"
                                     type="text"
@@ -156,14 +166,14 @@ const FormModal = () => {
                             </div>
                     </>
                
-                {isValidForm ? <></> : <div className="err-msg">All fields are required</div>}
+                {isValidForm ? <></> : <div className="err-msg">Сва поља су обавезна!</div>}
              
                 <button
                     type="submit"
                     className="submit-button"
                     onClick={formHandler}
                 >
-                    POTVRDI
+                    ПОТВРДИ
                 </button>
             </div>
         </Modal>
